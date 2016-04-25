@@ -4,7 +4,7 @@ public class Ticket implements Runnable{
 
 	public int count=6666;
 	public void saleTicket() throws Exception{
-		synchronized(this){
+		synchronized(this){ 
 			System.out.println(Thread.currentThread().getName()+"»¹Ê£"+count--+"Æ±");
 		}
 		
