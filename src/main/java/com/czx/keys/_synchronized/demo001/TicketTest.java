@@ -1,4 +1,4 @@
-package com.czx.keys.synchronize.demo001;
+package com.czx.keys._synchronized.demo001;
 
 import org.junit.Test;
 

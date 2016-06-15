@@ -1,4 +1,4 @@
-package com.czx.keys.statics;
+package com.czx.keys._static;
 
 /**
  * static ÓÃ·¨
@@ -17,6 +17,6 @@ package com.czx.keys.statics;
  * @author Administrator
  *
  */
-public class Statics {
+public class _Static {
 
 }
