@@ -1,4 +1,4 @@
-package com.czx.keys_enum;
+package com.czx.keys._enum;
 
 /**
  * ¶¨ÓÚÃ¶¾Ù
