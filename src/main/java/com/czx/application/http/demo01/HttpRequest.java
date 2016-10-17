@@ -77,7 +77,7 @@ public class HttpRequest {
      */
     public static String sendPost(String url, String param) {
         PrintWriter out = null;
-        BufferedReader in = null;
+        InputStream in = null;
         String result = "";
         try {
             URL realUrl = new URL(url);
@@ -98,12 +98,11 @@ public class HttpRequest {
             // flush输出流的缓冲
             out.flush();
             // 定义BufferedReader输入流来读取URL的响应
-            in = new BufferedReader(
-                    new InputStreamReader(conn.getInputStream()));
-            String line;
-            while ((line = in.readLine()) != null) {
-                result += line;
-            }
+            in = conn.getInputStream();
+            int size =in.available();
+            byte[] jsonBytes =new byte[size];
+            in.read(jsonBytes);
+	        String message=new String(jsonBytes,"UTF-8");
         } catch (Exception e) {
             System.out.println("发送 POST 请求出现异常！"+e);
             e.printStackTrace();
