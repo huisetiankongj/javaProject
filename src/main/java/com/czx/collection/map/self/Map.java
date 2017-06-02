@@ -17,7 +17,7 @@ public interface Map<K,V> {
 	
 	V put(K key,V value);
 	
-	void remove(Object key);
+	V remove(Object key);
 	
 	void putAll(Map<? extends K,? extends V> m);
 	
