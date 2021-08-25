@@ -6,7 +6,7 @@
   
   <!-- 项目属性 -->
   <properties>
-  		<xstream.version>1.4.7</xstream.version>
+  		<xstream.version>1.4.18</xstream.version>
   		<spring.version>4.0.8.RELEASE</spring.version>
   </properties>
   
